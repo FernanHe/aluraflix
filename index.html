@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Aluraflix</title>
+  <meta name="title" content="Aluraflix - Dia 5">
+  <meta name="description" content="Adicione e remova filmes!">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/ea1ca186af.js" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+  
+</body>
+</html>
+
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <img src="Aluraflix.png" alt="Aluraflix logo" id="start">
+      <a href="#series">Series</a>
+      <a href="#movies-section">Peliculas</a>
+      <a href="#my-list">Mi lista</a>
+
+    </div>
+    <div class="user-account">
+
+      <i class="fas fa-search"></i>
+      <a href="login.html">Iniciar Sesión</a>
+      <i class="fas fa-bell"></i>
+      <img src="Netflix-avatar.png" alt="User Icon">
+    </div>
+  </nav>
+  <section class="featured-movie">
+    <div class="dark-gradient"></div>
+    <video autoplay loop class="demon-trailer" id="movie-trailer">
+      <source src="Piscina.mp4">
+    </video>
+    <div class="trailer-about">
+      <div class="trailer-logo">
+        <img src="pol1.png" alt="Logo do trailer">
+      </div>
+      <p class="genre">Terror. Ciencia ficción. Thriller. Intriga</p>
+      <div class="description-trailer">
+        <p>James y Em Foster disfrutan de unas vacaciones en la playa con todo incluido en la isla ficticia de La Tolqa, cuando un accidente fatal expone la subcultura perversa del turismo hedonista, la violencia imprudente y los horrores surrealistas del resort.</p>
+        
+      </div>
+      <div class="buttons-trailer">
+       <a href="https://www.youtube.com/watch?v=n7qkeanE1WI"> <button class="btn-play"><i class="fas fa-play"></i>Reproducir</button></a>
+        <button class="btn-more-information"><i class="fas fa-info-circle"></i>Mas información</button>
+        
+      </div>
+    </div>
+
+  </section>
+
+  <section class="series" id="series">
+    <div class="items-wrapper">
+      <h2 class="recomendation">Series:</h2>
+      <div class="items" id="items-series">
+      </div>
+    </div>
+  </section>
+</br></br>
+    <section id="my-list">
+      <div class="items-wrapper">
+        <h2 class="recomendation" style="size: 18px; color: red;">Episodios Gratuitos</h2>
+        <p>¡Descubre la emoción en los estrenos de peliculas y íconicas</p>
+      </br>
+        <a> <button class="btn-play"><i class="fas fa-play"></i>Ver ahora</button></a>
+      </div>
+
+</br></br></br></br></br></br>
+  <section id="movies-section">
+    <div class="items-wrapper">
+      <h2 class="recomendation">Peliculas:</h2>
+      <div class="items" id="items-movies">
+        
+      </div>
+    </div>
+  </section>
+</br></br></br></br></br>
+  <section id="my-list">
+    <div class="items-wrapper">
+      <h2 class="recomendation">Mi lista:</h2>
+      <div id="user-movies" class="user-movies">
+
+      </div>
+    </div>
+  </section>
+  <div class="form-wrapper">
+    <input type="text" id="filme" name="filme" placeholder="Introduzca la dirección de la imagen">
+    <button onClick="addMovie()">Agregar Pelicula</button>
+    <button onClick="removeMovie()">Eliminar Pelicula</button>
+  </div>
+  </a>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
